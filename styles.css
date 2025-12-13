@@ -1,0 +1,79 @@
+/* Reset Dasar */
+body, h1, p, iframe, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Agar footer berada di bawah */
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Main Content dan PDF Container */
+.pdf-container {
+    flex-grow: 1; /* Memastikan container mengambil ruang sisa */
+    max-width: 1200px;
+    width: 90%; /* Responsif */
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Iframe untuk PDF */
+.pdf-container iframe {
+    width: 100%;
+    /* Atur tinggi agar PDF terlihat jelas. Gunakan satuan viewport height (vh) 
+       atau nilai piksel yang besar */
+    height: 75vh; 
+    min-height: 500px; /* Tinggi minimum yang masuk akal */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #e2e6ea;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: auto; /* Mendorong footer ke bawah */
+}
+
+/* Responsivitas (Untuk layar yang lebih kecil) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 10px;
+    }
+    
+    .pdf-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .pdf-container iframe {
+        height: 70vh; /* Sedikit lebih pendek di mobile */
+        min-height: 400px;
+    }
+}
