@@ -14,6 +14,12 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Agar footer berada di bawah */
 }
+body {
+  background-image: url('1-9_merged-1.webp'); /* Browser modern */
+  /* fallback untuk browser lama */
+  background-image: url('1-9_merged-1.webp');
+}
+
 
 /* Header */
 header {
@@ -77,3 +83,4 @@ footer {
         min-height: 400px;
     }
 }
+
