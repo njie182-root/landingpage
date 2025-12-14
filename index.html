@@ -14,15 +14,11 @@
     </header>
 
     <main class="pdf-container">
-        <iframe 
-            src="pdf/1-9_merged.pdf" 
-            title="Dokumen PDF Utama"
-            frameborder="0"
-            width="100%" 
-            height="500px"
-        >
-            <p>Browser Anda tidak mendukung tampilan PDF langsung. Anda dapat <a href="pdf/1-9_merged.pdf" target="_blank">mengunduh dokumen PDF di sini</a>.</p>
-        </iframe>
+        <object data="pdf/1-9_merged.pdf" type="application/pdf" width="100%" height="500px">
+  <!-- Teks ini akan muncul jika browser tidak mendukung objek -->
+  <p>Browser Anda tidak mendukung penampilkan PDF. <a href="pdf/1-9_merged.pdf">Unduh PDF</a></p>
+</object>
+
     </main>
 
     <footer>
@@ -31,6 +27,7 @@
 
 </body>
 </html>
+
 
 
 
