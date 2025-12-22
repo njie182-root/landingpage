@@ -1,86 +1,68 @@
-/* Reset Dasar */
-body, h1, p, iframe, footer {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Agar footer berada di bawah */
 }
+
 body {
-  background-image: url('1-9_merged-1.webp'); /* Browser modern */
-  /* fallback untuk browser lama */
-  background-image: url('1-9_merged-1.webp');
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-
-/* Header */
-header {
-    background-color: #007bff;
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1e90ff, #00bcd4);
     color: white;
     text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 80px 20px;
 }
 
-header h1 {
-    margin-bottom: 5px;
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* Main Content dan PDF Container */
-.pdf-container {
-    flex-grow: 1; /* Memastikan container mengambil ruang sisa */
+.hero p {
+    font-size: 18px;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 60px 20px;
     max-width: 1200px;
-    width: 90%; /* Responsif */
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    margin: auto;
 }
 
-/* Iframe untuk PDF */
-.pdf-container iframe {
-    width: 100%;
-    /* Atur tinggi agar PDF terlihat jelas. Gunakan satuan viewport height (vh) 
-       atau nilai piksel yang besar */
-    height: 75vh; 
-    min-height: 500px; /* Tinggi minimum yang masuk akal */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Footer */
-footer {
+.gallery h2 {
     text-align: center;
-    padding: 15px 0;
-    background-color: #e2e6ea;
-    color: #666;
-    border-top: 1px solid #ddd;
-    margin-top: auto; /* Mendorong footer ke bawah */
+    margin-bottom: 40px;
+    font-size: 28px;
 }
 
-/* Responsivitas (Untuk layar yang lebih kecil) */
-@media (max-width: 768px) {
-    header {
-        padding: 15px 10px;
-    }
-    
-    .pdf-container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .pdf-container iframe {
-        height: 70vh; /* Sedikit lebih pendek di mobile */
-        min-height: 400px;
-    }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
