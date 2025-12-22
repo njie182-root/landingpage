@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Galeri</title>
+    <title>Nabil | Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <h1>Selamat Datang</h1>
-        <p>Galeri Gambar Landing Page</p>
-    </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Nabil</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
 
-    <!-- GALLERY SECTION -->
-    <section class="gallery">
-        <h2>Galeri Kami</h2>
-        <div class="gallery-grid">
-            <img src="https://picsum.photos/400/300?random=1" alt="Gambar 1">
-            <img src="https://picsum.photos/400/300?random=2" alt="Gambar 2">
-            <img src="https://picsum.photos/400/300?random=3" alt="Gambar 3">
-            <img src="https://picsum.photos/400/300?random=4" alt="Gambar 4">
-            <img src="https://picsum.photos/400/300?random=5" alt="Gambar 5">
-            <img src="https://picsum.p
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>Selamat Datang di Nabil</h1>
+    <p>Koleksi galeri terbaik kami</p>
+    <a href="#gallery" class="btn">Lihat Galeri</a>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <h2>Galeri Kami</h2>
+    <div class="gallery-grid">
+        <img src="https://picsum.photos/id/1015/600/400" onclick="openModal(this)">
+        <img src="https://picsum.photos/id/1025/600/400" onclick="openModal(this)">
+        <img src="https://picsum.photos/id/1035/600/400" onclick="openModal(this)">
+        <img src="https://picsum.photos/id/1045/600/400" onclick="openModal(this)">
+        <img src="https://picsum.photos/id/1055/600/400" onclick="openModal(this)">
+        <img src="https://picsum.photos/id/1065/600/400" onclick="openModal(this)">
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-img" id="modalImg">
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <p>© 2025 Nabil. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
