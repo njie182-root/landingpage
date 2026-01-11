@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Landing Page Keren</title>
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -14,44 +18,19 @@
     <a href="#home">Home</a>
     <a href="#features">Fitur</a>
     <a href="#contact">Kontak</a>
+    <button id="themeToggle">🌙</button>
   </nav>
 </header>
 
-<section id="home" class="hero">
+<section id="home" class="hero" data-aos="fade-up">
   <h1>Bangun Website Keren 🚀</h1>
-  <p>Landing page modern, cepat, dan responsive untuk semua device.</p>
+  <p>Landing page modern, cepat, dan responsive.</p>
   <a href="#features" class="btn">Lihat Fitur</a>
 </section>
 
 <section id="features" class="features">
-  <div class="card">
+  <div class="card" data-aos="zoom-in">
     <h3>⚡ Cepat</h3>
-    <p>Optimasi untuk performa maksimal.</p>
+    <p>Optimasi performa.</p>
   </div>
-  <div class="card">
-    <h3>📱 Responsive</h3>
-    <p>Tampil sempurna di HP, tablet, dan desktop.</p>
-  </div>
-  <div class="card">
-    <h3>🎨 Modern</h3>
-    <p>Desain clean & profesional.</p>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Hubungi Kami</h2>
-  <form>
-    <input type="text" placeholder="Nama" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Pesan"></textarea>
-    <button type="submit">Kirim</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 MyBrand. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+  <div class="card" data-aos="zoom-in
