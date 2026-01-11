@@ -1,3 +1,17 @@
+:root {
+  --bg: #0f172a;
+  --text: #ffffff;
+  --card: #020617;
+  --accent: #38bdf8;
+}
+
+body.light {
+  --bg: #f8fafc;
+  --text: #020617;
+  --card: #ffffff;
+  --accent: #0284c7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +20,33 @@
 }
 
 body {
-  background: #0f172a;
-  color: #fff;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
 }
 
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 10%;
-  background: #020617;
+  background: var(--card);
   position: sticky;
   top: 0;
-  z-index: 100;
 }
 
 .navbar a {
   margin-left: 20px;
+  color: var(--text);
   text-decoration: none;
-  color: #cbd5f5;
 }
-.navbar a:hover {
-  color: #38bdf8;
+
+#themeToggle {
+  margin-left: 15px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -39,54 +57,42 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-}
-.hero p {
-  margin: 15px 0;
-  color: #cbd5f5;
-}
+.hero h1 { font-size: 3rem; }
 
 .btn {
-  background: #38bdf8;
-  color: #020617;
+  margin-top: 15px;
+  background: var(--accent);
+  color: #fff;
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
 }
 
 /* Features */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
   gap: 20px;
   padding: 60px 10%;
 }
 
 .card {
-  background: #020617;
+  background: var(--card);
   padding: 25px;
   border-radius: 15px;
   text-align: center;
   transition: 0.3s;
 }
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(56,189,248,0.2);
+  transform: translateY(-8px) scale(1.02);
 }
 
 /* Contact */
 .contact {
   padding: 60px 10%;
-  background: #020617;
-}
-.contact h2 {
-  text-align: center;
-  margin-bottom: 30px;
+  background: var(--card);
 }
 
 form {
@@ -105,9 +111,10 @@ input, textarea {
 
 button {
   padding: 12px;
-  border: none;
   border-radius: 8px;
-  background: #38bdf8;
+  border: none;
+  background: var(--accent);
+  color: white;
   font-weight: bold;
   cursor: pointer;
 }
@@ -116,13 +123,10 @@ button {
 footer {
   text-align: center;
   padding: 20px;
-  background: #020617;
-  color: #94a3b8;
+  background: var(--card);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
+@media(max-width:768px){
+  .hero h1 { font-size: 2.2rem; }
 }
