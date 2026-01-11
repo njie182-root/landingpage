@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page Keren</title>
+  <meta charset="UTF-8">
+  <title>Website Monetisasi AdSense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <!-- SEO Basic -->
+  <meta name="description" content="Website responsive dengan dark mode dan siap monetisasi Google AdSense">
+  <meta name="keywords" content="landing page, adsense, dark mode, github pages">
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="navbar">
-  <h2 class="logo">MyBrand</h2>
+  <h2 class="logo">MySite</h2>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#features">Fitur</a>
-    <a href="#contact">Kontak</a>
+    <a href="#">Home</a>
+    <a href="#">Artikel</a>
+    <a href="#">Kontak</a>
     <button id="themeToggle">🌙</button>
   </nav>
 </header>
 
-<section id="home" class="hero" data-aos="fade-up">
-  <h1>Bangun Website Keren 🚀</h1>
-  <p>Landing page modern, cepat, dan responsive.</p>
-  <a href="#features" class="btn">Lihat Fitur</a>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>Website Responsive & Siap Monetisasi</h1>
+  <p>Dark mode, cepat, dan optimal untuk Google AdSense.</p>
 </section>
 
-<section id="features" class="features">
-  <div class="card" data-aos="zoom-in">
-    <h3>⚡ Cepat</h3>
-    <p>Optimasi performa.</p>
-  </div>
-  <div class="card" data-aos="zoom-in
+<!-- ===== IKLAN ATAS ===== -->
+<div class="ads">
+  <!-- Adsense Display Ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXX"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<main class="content">
+  <article class="card">
+    <h2>Artikel Pertama</h2>
+    <p>
+      Ini contoh konten website yang SEO friendly dan cocok
+      untuk dimonetisasi Google AdSense.
+    </p>
+  </article>
+
+  <article class="card">
+    <h2>Artikel Kedua</h2>
+    <p>
+      Website ini ringan, responsive, dan punya mode gelap & terang.
+    </p>
+  </article>
+</main>
+
+<!-- ===== IKLAN TENGAH ===== -->
+<div class="ads">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-XXXXXXX"
+       data-ad-slot="9876543210"
+       data-ad-format="rectangle"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<footer>
+  <p>© 2026 MySite • Powered by GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
