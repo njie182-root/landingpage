@@ -16,7 +16,7 @@ body.light {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 body {
@@ -25,11 +25,12 @@ body {
   transition: 0.3s;
 }
 
-/* Navbar */
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  align-items: center;
+  padding: 15px 10%;
   background: var(--card);
   position: sticky;
   top: 0;
@@ -49,84 +50,53 @@ body {
   cursor: pointer;
 }
 
-/* Hero */
+/* ===== HERO ===== */
 .hero {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding: 80px 10%;
+}
+.hero h1 {
+  font-size: 2.8rem;
+}
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
 }
 
-.hero h1 { font-size: 3rem; }
-
-.btn {
-  margin-top: 15px;
-  background: var(--accent);
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
+/* ===== ADS ===== */
+.ads {
+  margin: 30px auto;
+  text-align: center;
+  max-width: 1000px;
 }
 
-/* Features */
-.features {
+/* ===== CONTENT ===== */
+.content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  padding: 60px 10%;
+  padding: 40px 10%;
 }
 
 .card {
   background: var(--card);
   padding: 25px;
   border-radius: 15px;
-  text-align: center;
   transition: 0.3s;
 }
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-5px);
 }
 
-/* Contact */
-.contact {
-  padding: 60px 10%;
-  background: var(--card);
-}
-
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-}
-
-button {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  background: var(--accent);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
   background: var(--card);
+  opacity: 0.8;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
 @media(max-width:768px){
-  .hero h1 { font-size: 2.2rem; }
+  .hero h1 { font-size: 2rem; }
 }
